@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:money_tracking_project/views/home_ui.dart';
+import 'package:money_tracking_project/views/splash_screen_ui.dart';
+import 'package:money_tracking_project/views/welcome_ui.dart';
 
 void main(List<String> args) {
   runApp(const MoneyTrackingApp());
@@ -18,7 +20,7 @@ class _MoneyTrackingAppState extends State<MoneyTrackingApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomeUi(),
+      home: WelcomeUi(),
       theme: ThemeData(
           textTheme: GoogleFonts.kanitTextTheme(
         Theme.of(context).textTheme,
